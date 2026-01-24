@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SACHIN PREDICTION™</title>
 
-<!-- META PIXEL – FINAL CLEAN SETUP -->
+<!-- META PIXEL – FINAL PERMANENT SAFE VERSION -->
 <script>
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;
 n=f.fbq=function(){
-n.callMethod ?
+n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';
@@ -19,12 +19,12 @@ t=b.createElement(e);t.async=!0;
 t.src=v;
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
-}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 /* INIT PIXEL */
 fbq('init','3933927376899680');
 
-/* ONLY PAGE VIEW – NO VALUE / NO CURRENCY */
+/* ONLY SAFE EVENT */
 fbq('track','PageView');
 </script>
 <!-- END META PIXEL -->
@@ -107,7 +107,7 @@ padding:15px 10px;font-size:12px
 </div>
 </div>
 
-<!-- FINAL SAFE BUTTON -->
+<!-- SAFE TELEGRAM BUTTON -->
 <div class="join">
 <a href="https://t.me/+WgASJ_MobEI3N2E1"
    target="_blank"
@@ -131,13 +131,15 @@ padding:15px 10px;font-size:12px
 </div>
 </div>
 
+<!-- SAFE CLICK TRACKING (NO VALUE / NO CURRENCY / NO FAKE) -->
 <script>
-/* OPTIONAL: SAFE CLICK INTENT (NO VALUE / NO CURRENCY) */
-let clicked=false;
-document.getElementById("joinBtn").addEventListener("click",function(){
-  if(clicked) return;
-  clicked=true;
-  fbq('track','ViewContent');
+let clicked = false;
+
+document.getElementById("joinBtn").addEventListener("click", function () {
+  if (clicked) return;
+  clicked = true;
+
+  fbq('trackCustom','TelegramJoinClick');
 });
 </script>
 
